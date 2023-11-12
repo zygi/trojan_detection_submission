@@ -14,7 +14,7 @@ modal token new # to authenticate to Modal
 modal run dreaming_modal.py --subtrack=base
 ```
 
-to prepare the base-size submission. It should take ~1 A100-day in total (~70mins with the default Modal parallelism level of 10 gpus).
+to prepare the base-size submission. It should take ~1 A100-day in total (~70mins with the default Modal parallelism level of 10 gpus). After the program completes, if everything goes well one should find a `submissions/predictions.json` file in the working directory.
 
 To prepare the large-size submission, one needs to
 1) In `dreaming_modal.py`, comment out the base-size `Config` object and comment in the large-size `Config`. 
