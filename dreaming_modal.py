@@ -59,36 +59,36 @@ class SearchConfig:
     contest_phase: str = "test"
 
 # Making the config global so that it can be used in the stub. Otherwise Modal's decorators make it very hard
-# CFG = SearchConfig(
-#     contest_subtrack="base",
-#     contest_model_id="TDC2023/trojan-base-pythia-1.4b-test-phase",
-#     output_pkl_file_path="results_base_repl.pkl",
-    
-#     concurrency_limit=10,
-#     max_tasks_in_flight=20,
-#     target_total_answers=1200,
-#     target_answers_per_question=20,
-    
-#     search_batch_size=384,
-#     search_topk=32,
-#     search_explore_per_pop=8,
-#     search_pop_size=256,
-# )
 CFG = SearchConfig(
-    contest_subtrack="large",
-    contest_model_id="TDC2023/trojan-large-pythia-6.9b-test-phase",
-    output_pkl_file_path="results_large_repl.pkl",
+    contest_subtrack="base",
+    contest_model_id="TDC2023/trojan-base-pythia-1.4b-test-phase",
+    output_pkl_file_path="results_base_repl.pkl",
     
     concurrency_limit=10,
     max_tasks_in_flight=20,
-    target_total_answers=80,
-    target_answers_per_question=1,
+    target_total_answers=1200,
+    target_answers_per_question=20,
     
-    search_batch_size=96,
-    search_topk=16,
-    search_explore_per_pop=4,
+    search_batch_size=384,
+    search_topk=32,
+    search_explore_per_pop=8,
     search_pop_size=256,
 )
+# CFG = SearchConfig(
+#     contest_subtrack="large",
+#     contest_model_id="TDC2023/trojan-large-pythia-6.9b-test-phase",
+#     output_pkl_file_path="results_large_repl.pkl",
+    
+#     concurrency_limit=10,
+#     max_tasks_in_flight=20,
+#     target_total_answers=1400,
+#     target_answers_per_question=20,
+    
+#     search_batch_size=96,
+#     search_topk=16,
+#     search_explore_per_pop=4,
+#     search_pop_size=256,
+# )
 
 
 def download_model_to_folder():
