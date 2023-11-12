@@ -4,7 +4,9 @@
 
 The code here is a conversion from a largely notebook-based workflow we used for the Trojan Detection Contest. It's unfortunately not very readable, and absolutely not intended to be reused.
 
-The code uses [Modal](https://modal.com/) for distributed GPU compute. One should be able to run it by running 
+The code uses [Modal](https://modal.com/) for distributed GPU compute. Unfortunately, because our search procedure is stateful, running its subtasks on Modal and integrating their results introduces nonderterminism.
+
+One should be able to run the code by running 
 
 ```bash
 python -m venv .venv
