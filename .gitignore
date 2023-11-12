@@ -1,0 +1,15 @@
+bu
+plots
+submissions
+submission.zip
+.ipynb_checkpoints
+data/dev/*/model
+data/test/*/model
+data/dev/*-jax*
+.venv
+.vscode
+*.pkl
+
+
+
+__pycache__

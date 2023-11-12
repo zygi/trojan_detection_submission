@@ -1,0 +1,5 @@
+transformers==4.35.0
+Levenshtein==0.23.0
+modal==0.55.4085
+nltk==3.8.1
+accelerate==0.24.1
